@@ -107,6 +107,7 @@ def main():
         elif x == "SPHERE":
             try:
                 r = input("Enter a radius: ")
+                r > 0
                 r = float(r)
                 sphere(r)
                 print("Thanks for calculating, you will now be given the same options as earlier.\n")
@@ -115,6 +116,8 @@ def main():
         elif x == "CYLINDER":
             try:
                 r = input("Enter a radius: ")
+                r >0
+                h> 0
                 r = float(r)
                 h = input("Enter a height: ")
                 h = float(h)
@@ -132,6 +135,10 @@ def main():
                 n = float(n)
                 t = input("Enter the number of time periods elapsed: ")
                 t = float(t)
+                P > 0
+                r > 0
+                n > 0
+                t > 0
                 compound(P, r, n, t)
                 print("Thanks for calculating, you will now be given the same options as earlier.\n")
             except:
@@ -139,6 +146,7 @@ def main():
         elif x == "SASPHERE":
             try:
                 r = input("Enter a radius: ")
+                r > 0
                 r = float(r)
                 sasphere(r)
                 print("Thanks for calculating, you will now be given the same options as earlier.\n")
@@ -147,6 +155,7 @@ def main():
         elif x == "CIRCLE":
             try:
                 r = input("Enter a radius: ")
+                r > 0
                 r = float(r)
                 circle(r)
                 print("Thanks for calculating, you will now be given the same options as earlier.\n")
