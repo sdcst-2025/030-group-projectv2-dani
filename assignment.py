@@ -96,8 +96,9 @@ def main():
         print("Would you like to find the volume of a sphere? If you do, type SPHERE")
         print("Would you like to find the volume of a cylinder? If you do, type CYLINDER")
         print("Would you like to find the amount of money accumulated with compound interest? If you do, type COMPOUND")
-        print("Would you like to find the surface are of a sphere? If you do, type SASPHERE")
+        print("Would you like to find the surface area of a sphere? If you do, type SASPHERE")
         print("Would you like to find area of a circle? If you do, type CIRCLE")
+        print("Would you like to look at the instructions again? If you do, type INSTRUCTIONS")
         print("If you'd like to exit, type EXIT")
         x = input()
         x = str(x)
@@ -151,6 +152,8 @@ def main():
                 print("Thanks for calculating, you will now be given the same options as earlier.\n")
             except:
                 print("\nError. Try again.\n")
+        elif x == "INSTRUCTIONS":
+            instructions()
         else:
             print("\n\nError. Try again.\n\n")
     pass
