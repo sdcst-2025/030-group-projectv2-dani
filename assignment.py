@@ -107,7 +107,7 @@ def main():
         elif x == "SPHERE":
             try:
                 r = input("Enter a radius: ")
-                r > 0
+                #r > 0
                 r = float(r)
                 sphere(r)
                 print("Thanks for calculating, you will now be given the same options as earlier.\n")
